@@ -1,12 +1,12 @@
 from datetime import *
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-array = ['month', 'day', 'username']
+array = [[9, 14, "박현기"],[3, 15,"강지명"],[9, 9,	"정준혁"],[5, 9,"안주원"],[7, 9,"유형찬"],[5, 3,"임종수"],[11, 17,"황지영"],[1, 23,"김수진"],[4, 24,"정소연"],[2,21,"라허운"],[7,13,"신현민"],[1, 24,"서정우"][9, 28, "박진혜"],[11, 15,"신동석"],[5, 23,"김지훈"] ]
 nowDate = datetime.now()
 # print(nowDate.month , nowDate.day)
 
 try:
-    client = WebClient(token="Token")
+    client = WebClient(token="xoxb-2388082878180-2442111717364-dJ2GK2Rk2ASTgGd47Zb5Neq5")
     for i in range (len(array)):
         if (nowDate.month == array[i][0] and nowDate.day == array[i][1]):
             # print(array[i][0], array[i][1])
