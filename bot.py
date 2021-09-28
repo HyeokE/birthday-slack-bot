@@ -19,7 +19,6 @@ array = [
     ['09', '28', "박진혜"],
     ['11', '15', "신동석"],
     ['05', '23', "김지훈"],
-    ['09', '29',"깃헙 액션 테스트"],
     ['10', '11', "한글"],
 ]
 Month = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%m')
@@ -34,7 +33,7 @@ Date = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%d')
 
 
 try:
-    client = WebClient(token="xoxb-2388082878180-2442111717364-dJ2GK2Rk2ASTgGd47Zb5Neq5")
+    client = WebClient(token="xoxb-2388082878180-2442111717364-WNUYSV6fnpU3OU8zgsXSNCxq")
     for i in range (len(array)):
         if (Month == array[i][0] and Date == array[i][1]):
             # print(array[i][0], array[i][1])
