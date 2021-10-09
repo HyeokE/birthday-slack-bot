@@ -19,7 +19,7 @@ array = [
     ['09', '28', "박진혜"],
     ['11', '15', "신동석"],
     ['05', '23', "김지훈"],
-    ['10', '11', "한글"],
+    ['10', '11', "한글날대체공휴일"],
 ]
 Month = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%m')
 Date = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%d')
