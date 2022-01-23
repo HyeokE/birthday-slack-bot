@@ -3,23 +3,9 @@ from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import datetime as dt
 import pytz as pytz
+#member list
 array = [
-    ['09', '14', "박현기"],
-    ['03', '15', "강지명"],
-    ['09', '09', "정준혁"],
-    ['05', '09', "안주원"],
-    ['07', '09', "유형찬"],
-    ['05', '03', "임종수"],
-    ['11', '17', "황지영"],
-    ['01', '23', "김수진"],
-    ['04', '24', "정소연"],
-    ['02', '21', "라허운"],
-    ['07', '13', "신현민"],
-    ['01', '24', "서정우"],
-    ['09', '28', "박진혜"],
-    ['11', '15', "신동석"],
-    ['05', '23', "김지훈"],
-    ['10', '11', "한글날대체공휴일"],
+    ['month', 'date', "name"],
 ]
 Month = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%m')
 Date = datetime.now(pytz.timezone('Asia/Seoul')).strftime('%d')
